@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D14B4C4A1BFC4F5100BD60AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D14B4C491BFC4F5100BD60AD /* main.m */; };
+		D14B4C4D1BFC4F5100BD60AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D14B4C4C1BFC4F5100BD60AD /* AppDelegate.m */; };
+		D14B4C501BFC4F5100BD60AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D14B4C4F1BFC4F5100BD60AD /* ViewController.m */; };
+		D14B4C531BFC4F5100BD60AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14B4C511BFC4F5100BD60AD /* Main.storyboard */; };
+		D14B4C551BFC4F5100BD60AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14B4C541BFC4F5100BD60AD /* Assets.xcassets */; };
+		D14B4C581BFC4F5100BD60AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14B4C561BFC4F5100BD60AD /* LaunchScreen.storyboard */; };
+		D14B4C631BFC4F5100BD60AD /* ZLF_multi_threadDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D14B4C621BFC4F5100BD60AD /* ZLF_multi_threadDemoTests.m */; };
+		D14B4C6E1BFC4F5100BD60AD /* ZLF_multi_threadDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D14B4C6D1BFC4F5100BD60AD /* ZLF_multi_threadDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D14B4C5F1BFC4F5100BD60AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D14B4C3D1BFC4F5100BD60AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D14B4C441BFC4F5100BD60AD;
+			remoteInfo = "ZLF-multi-threadDemo";
+		};
+		D14B4C6A1BFC4F5100BD60AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D14B4C3D1BFC4F5100BD60AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D14B4C441BFC4F5100BD60AD;
+			remoteInfo = "ZLF-multi-threadDemo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D14B4C451BFC4F5100BD60AD /* ZLF-multi-threadDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZLF-multi-threadDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D14B4C491BFC4F5100BD60AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D14B4C4B1BFC4F5100BD60AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D14B4C4C1BFC4F5100BD60AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D14B4C4E1BFC4F5100BD60AD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D14B4C4F1BFC4F5100BD60AD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D14B4C521BFC4F5100BD60AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D14B4C541BFC4F5100BD60AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D14B4C571BFC4F5100BD60AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D14B4C591BFC4F5100BD60AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D14B4C5E1BFC4F5100BD60AD /* ZLF-multi-threadDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZLF-multi-threadDemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D14B4C621BFC4F5100BD60AD /* ZLF_multi_threadDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLF_multi_threadDemoTests.m; sourceTree = "<group>"; };
+		D14B4C641BFC4F5100BD60AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D14B4C691BFC4F5100BD60AD /* ZLF-multi-threadDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZLF-multi-threadDemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D14B4C6D1BFC4F5100BD60AD /* ZLF_multi_threadDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLF_multi_threadDemoUITests.m; sourceTree = "<group>"; };
+		D14B4C6F1BFC4F5100BD60AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D14B4C421BFC4F5100BD60AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14B4C5B1BFC4F5100BD60AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14B4C661BFC4F5100BD60AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D14B4C3C1BFC4F5100BD60AD = {
+			isa = PBXGroup;
+			children = (
+				D14B4C471BFC4F5100BD60AD /* ZLF-multi-threadDemo */,
+				D14B4C611BFC4F5100BD60AD /* ZLF-multi-threadDemoTests */,
+				D14B4C6C1BFC4F5100BD60AD /* ZLF-multi-threadDemoUITests */,
+				D14B4C461BFC4F5100BD60AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D14B4C461BFC4F5100BD60AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D14B4C451BFC4F5100BD60AD /* ZLF-multi-threadDemo.app */,
+				D14B4C5E1BFC4F5100BD60AD /* ZLF-multi-threadDemoTests.xctest */,
+				D14B4C691BFC4F5100BD60AD /* ZLF-multi-threadDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D14B4C471BFC4F5100BD60AD /* ZLF-multi-threadDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D14B4C4B1BFC4F5100BD60AD /* AppDelegate.h */,
+				D14B4C4C1BFC4F5100BD60AD /* AppDelegate.m */,
+				D14B4C4E1BFC4F5100BD60AD /* ViewController.h */,
+				D14B4C4F1BFC4F5100BD60AD /* ViewController.m */,
+				D14B4C511BFC4F5100BD60AD /* Main.storyboard */,
+				D14B4C541BFC4F5100BD60AD /* Assets.xcassets */,
+				D14B4C561BFC4F5100BD60AD /* LaunchScreen.storyboard */,
+				D14B4C591BFC4F5100BD60AD /* Info.plist */,
+				D14B4C481BFC4F5100BD60AD /* Supporting Files */,
+			);
+			path = "ZLF-multi-threadDemo";
+			sourceTree = "<group>";
+		};
+		D14B4C481BFC4F5100BD60AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D14B4C491BFC4F5100BD60AD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D14B4C611BFC4F5100BD60AD /* ZLF-multi-threadDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D14B4C621BFC4F5100BD60AD /* ZLF_multi_threadDemoTests.m */,
+				D14B4C641BFC4F5100BD60AD /* Info.plist */,
+			);
+			path = "ZLF-multi-threadDemoTests";
+			sourceTree = "<group>";
+		};
+		D14B4C6C1BFC4F5100BD60AD /* ZLF-multi-threadDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D14B4C6D1BFC4F5100BD60AD /* ZLF_multi_threadDemoUITests.m */,
+				D14B4C6F1BFC4F5100BD60AD /* Info.plist */,
+			);
+			path = "ZLF-multi-threadDemoUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D14B4C441BFC4F5100BD60AD /* ZLF-multi-threadDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D14B4C721BFC4F5100BD60AD /* Build configuration list for PBXNativeTarget "ZLF-multi-threadDemo" */;
+			buildPhases = (
+				D14B4C411BFC4F5100BD60AD /* Sources */,
+				D14B4C421BFC4F5100BD60AD /* Frameworks */,
+				D14B4C431BFC4F5100BD60AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZLF-multi-threadDemo";
+			productName = "ZLF-multi-threadDemo";
+			productReference = D14B4C451BFC4F5100BD60AD /* ZLF-multi-threadDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D14B4C5D1BFC4F5100BD60AD /* ZLF-multi-threadDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D14B4C751BFC4F5100BD60AD /* Build configuration list for PBXNativeTarget "ZLF-multi-threadDemoTests" */;
+			buildPhases = (
+				D14B4C5A1BFC4F5100BD60AD /* Sources */,
+				D14B4C5B1BFC4F5100BD60AD /* Frameworks */,
+				D14B4C5C1BFC4F5100BD60AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D14B4C601BFC4F5100BD60AD /* PBXTargetDependency */,
+			);
+			name = "ZLF-multi-threadDemoTests";
+			productName = "ZLF-multi-threadDemoTests";
+			productReference = D14B4C5E1BFC4F5100BD60AD /* ZLF-multi-threadDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D14B4C681BFC4F5100BD60AD /* ZLF-multi-threadDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D14B4C781BFC4F5100BD60AD /* Build configuration list for PBXNativeTarget "ZLF-multi-threadDemoUITests" */;
+			buildPhases = (
+				D14B4C651BFC4F5100BD60AD /* Sources */,
+				D14B4C661BFC4F5100BD60AD /* Frameworks */,
+				D14B4C671BFC4F5100BD60AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D14B4C6B1BFC4F5100BD60AD /* PBXTargetDependency */,
+			);
+			name = "ZLF-multi-threadDemoUITests";
+			productName = "ZLF-multi-threadDemoUITests";
+			productReference = D14B4C691BFC4F5100BD60AD /* ZLF-multi-threadDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D14B4C3D1BFC4F5100BD60AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "张林峰";
+				TargetAttributes = {
+					D14B4C441BFC4F5100BD60AD = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					D14B4C5D1BFC4F5100BD60AD = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = D14B4C441BFC4F5100BD60AD;
+					};
+					D14B4C681BFC4F5100BD60AD = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = D14B4C441BFC4F5100BD60AD;
+					};
+				};
+			};
+			buildConfigurationList = D14B4C401BFC4F5100BD60AD /* Build configuration list for PBXProject "ZLF-multi-threadDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D14B4C3C1BFC4F5100BD60AD;
+			productRefGroup = D14B4C461BFC4F5100BD60AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D14B4C441BFC4F5100BD60AD /* ZLF-multi-threadDemo */,
+				D14B4C5D1BFC4F5100BD60AD /* ZLF-multi-threadDemoTests */,
+				D14B4C681BFC4F5100BD60AD /* ZLF-multi-threadDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D14B4C431BFC4F5100BD60AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14B4C581BFC4F5100BD60AD /* LaunchScreen.storyboard in Resources */,
+				D14B4C551BFC4F5100BD60AD /* Assets.xcassets in Resources */,
+				D14B4C531BFC4F5100BD60AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14B4C5C1BFC4F5100BD60AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14B4C671BFC4F5100BD60AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D14B4C411BFC4F5100BD60AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14B4C501BFC4F5100BD60AD /* ViewController.m in Sources */,
+				D14B4C4D1BFC4F5100BD60AD /* AppDelegate.m in Sources */,
+				D14B4C4A1BFC4F5100BD60AD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14B4C5A1BFC4F5100BD60AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14B4C631BFC4F5100BD60AD /* ZLF_multi_threadDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14B4C651BFC4F5100BD60AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14B4C6E1BFC4F5100BD60AD /* ZLF_multi_threadDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D14B4C601BFC4F5100BD60AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D14B4C441BFC4F5100BD60AD /* ZLF-multi-threadDemo */;
+			targetProxy = D14B4C5F1BFC4F5100BD60AD /* PBXContainerItemProxy */;
+		};
+		D14B4C6B1BFC4F5100BD60AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D14B4C441BFC4F5100BD60AD /* ZLF-multi-threadDemo */;
+			targetProxy = D14B4C6A1BFC4F5100BD60AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D14B4C511BFC4F5100BD60AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D14B4C521BFC4F5100BD60AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D14B4C561BFC4F5100BD60AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D14B4C571BFC4F5100BD60AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D14B4C701BFC4F5100BD60AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D14B4C711BFC4F5100BD60AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D14B4C731BFC4F5100BD60AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ZLF-multi-threadDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zlf.ZLF-multi-threadDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D14B4C741BFC4F5100BD60AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "ZLF-multi-threadDemo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zlf.ZLF-multi-threadDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D14B4C761BFC4F5100BD60AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "ZLF-multi-threadDemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zlf.ZLF-multi-threadDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZLF-multi-threadDemo.app/ZLF-multi-threadDemo";
+			};
+			name = Debug;
+		};
+		D14B4C771BFC4F5100BD60AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "ZLF-multi-threadDemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zlf.ZLF-multi-threadDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZLF-multi-threadDemo.app/ZLF-multi-threadDemo";
+			};
+			name = Release;
+		};
+		D14B4C791BFC4F5100BD60AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ZLF-multi-threadDemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zlf.ZLF-multi-threadDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "ZLF-multi-threadDemo";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D14B4C7A1BFC4F5100BD60AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "ZLF-multi-threadDemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zlf.ZLF-multi-threadDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "ZLF-multi-threadDemo";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D14B4C401BFC4F5100BD60AD /* Build configuration list for PBXProject "ZLF-multi-threadDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D14B4C701BFC4F5100BD60AD /* Debug */,
+				D14B4C711BFC4F5100BD60AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D14B4C721BFC4F5100BD60AD /* Build configuration list for PBXNativeTarget "ZLF-multi-threadDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D14B4C731BFC4F5100BD60AD /* Debug */,
+				D14B4C741BFC4F5100BD60AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D14B4C751BFC4F5100BD60AD /* Build configuration list for PBXNativeTarget "ZLF-multi-threadDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D14B4C761BFC4F5100BD60AD /* Debug */,
+				D14B4C771BFC4F5100BD60AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D14B4C781BFC4F5100BD60AD /* Build configuration list for PBXNativeTarget "ZLF-multi-threadDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D14B4C791BFC4F5100BD60AD /* Debug */,
+				D14B4C7A1BFC4F5100BD60AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D14B4C3D1BFC4F5100BD60AD /* Project object */;
+}
