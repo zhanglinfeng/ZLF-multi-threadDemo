@@ -15,6 +15,9 @@
 		D14B4C581BFC4F5100BD60AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14B4C561BFC4F5100BD60AD /* LaunchScreen.storyboard */; };
 		D14B4C631BFC4F5100BD60AD /* ZLF_multi_threadDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D14B4C621BFC4F5100BD60AD /* ZLF_multi_threadDemoTests.m */; };
 		D14B4C6E1BFC4F5100BD60AD /* ZLF_multi_threadDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D14B4C6D1BFC4F5100BD60AD /* ZLF_multi_threadDemoUITests.m */; };
+		D14B4C7D1BFC728F00BD60AD /* GCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D14B4C7C1BFC728F00BD60AD /* GCDViewController.m */; };
+		D14B4C981BFD717700BD60AD /* NSOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D14B4C971BFD717700BD60AD /* NSOperationViewController.m */; };
+		D14B4C9B1BFDAD0300BD60AD /* NSThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D14B4C9A1BFDAD0300BD60AD /* NSThreadViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		D14B4C691BFC4F5100BD60AD /* ZLF-multi-threadDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZLF-multi-threadDemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14B4C6D1BFC4F5100BD60AD /* ZLF_multi_threadDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLF_multi_threadDemoUITests.m; sourceTree = "<group>"; };
 		D14B4C6F1BFC4F5100BD60AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D14B4C7B1BFC728F00BD60AD /* GCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDViewController.h; sourceTree = "<group>"; };
+		D14B4C7C1BFC728F00BD60AD /* GCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDViewController.m; sourceTree = "<group>"; };
+		D14B4C961BFD717700BD60AD /* NSOperationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSOperationViewController.h; sourceTree = "<group>"; };
+		D14B4C971BFD717700BD60AD /* NSOperationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSOperationViewController.m; sourceTree = "<group>"; };
+		D14B4C991BFDAD0300BD60AD /* NSThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSThreadViewController.h; sourceTree = "<group>"; };
+		D14B4C9A1BFDAD0300BD60AD /* NSThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSThreadViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +119,12 @@
 				D14B4C561BFC4F5100BD60AD /* LaunchScreen.storyboard */,
 				D14B4C591BFC4F5100BD60AD /* Info.plist */,
 				D14B4C481BFC4F5100BD60AD /* Supporting Files */,
+				D14B4C7B1BFC728F00BD60AD /* GCDViewController.h */,
+				D14B4C7C1BFC728F00BD60AD /* GCDViewController.m */,
+				D14B4C961BFD717700BD60AD /* NSOperationViewController.h */,
+				D14B4C971BFD717700BD60AD /* NSOperationViewController.m */,
+				D14B4C991BFDAD0300BD60AD /* NSThreadViewController.h */,
+				D14B4C9A1BFDAD0300BD60AD /* NSThreadViewController.m */,
 			);
 			path = "ZLF-multi-threadDemo";
 			sourceTree = "<group>";
@@ -271,8 +286,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D14B4C501BFC4F5100BD60AD /* ViewController.m in Sources */,
+				D14B4C9B1BFDAD0300BD60AD /* NSThreadViewController.m in Sources */,
+				D14B4C981BFD717700BD60AD /* NSOperationViewController.m in Sources */,
 				D14B4C4D1BFC4F5100BD60AD /* AppDelegate.m in Sources */,
 				D14B4C4A1BFC4F5100BD60AD /* main.m in Sources */,
+				D14B4C7D1BFC728F00BD60AD /* GCDViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

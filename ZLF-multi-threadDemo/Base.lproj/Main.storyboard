@@ -1,25 +1,285 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Zsz-kK-81N">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--各种多线程-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTk-aK-ivZ">
+                                <rect key="frame" x="20" y="72" width="105" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="GCD" backgroundImage="Image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EBZ-vx-oyJ" kind="push" id="PxA-NO-NRJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tj8-Bd-vrF">
+                                <rect key="frame" x="20" y="121" width="105" height="30"/>
+                                <state key="normal" title="NSOperation" backgroundImage="Image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="QBs-dq-gXC" kind="push" id="btA-cE-3Fs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SCD-CE-E98">
+                                <rect key="frame" x="20" y="171" width="105" height="30"/>
+                                <state key="normal" title="NSThread" backgroundImage="Image"/>
+                                <connections>
+                                    <segue destination="Mhh-2f-xZO" kind="push" id="gWs-1W-uE6"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="各种多线程" id="gNJ-7a-beT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="181" y="264"/>
+        </scene>
+        <!--GCD-->
+        <scene sceneID="GRm-9M-uLe">
+            <objects>
+                <viewController id="EBZ-vx-oyJ" customClass="GCDViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MRc-mv-BKT"/>
+                        <viewControllerLayoutGuide type="bottom" id="kSo-ra-epq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hq2-c0-FW5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9cn-qf-qVh">
+                                <rect key="frame" x="20" y="80" width="267" height="30"/>
+                                <state key="normal" title="串行队列异步" backgroundImage="Image"/>
+                                <connections>
+                                    <action selector="serialAsync:" destination="EBZ-vx-oyJ" eventType="touchUpInside" id="ZHJ-Ov-Obc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ag7-aZ-qtO">
+                                <rect key="frame" x="20" y="126" width="267" height="30"/>
+                                <state key="normal" title="串行队列同步" backgroundImage="Image"/>
+                                <connections>
+                                    <action selector="serialSync:" destination="EBZ-vx-oyJ" eventType="touchUpInside" id="1tP-Kl-wjV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jzu-d5-TqI">
+                                <rect key="frame" x="20" y="171" width="267" height="30"/>
+                                <state key="normal" title="并行队列异步" backgroundImage="Image"/>
+                                <connections>
+                                    <action selector="concurrentAsync:" destination="EBZ-vx-oyJ" eventType="touchUpInside" id="3vC-f2-nUZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8o-u2-K1k">
+                                <rect key="frame" x="21" y="217" width="267" height="30"/>
+                                <state key="normal" title="并行队列同步" backgroundImage="Image"/>
+                                <connections>
+                                    <action selector="concurrentSync:" destination="EBZ-vx-oyJ" eventType="touchUpInside" id="Krz-e7-8fz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMR-zX-xhm">
+                                <rect key="frame" x="21" y="263" width="267" height="30"/>
+                                <state key="normal" title="队列组" backgroundImage="Image"/>
+                                <connections>
+                                    <action selector="queueGroup:" destination="EBZ-vx-oyJ" eventType="touchUpInside" id="zQZ-NU-bBb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9p2-yh-Y7W">
+                                <rect key="frame" x="21" y="308" width="266" height="30"/>
+                                <state key="normal" title="延迟执行" backgroundImage="Image"/>
+                                <connections>
+                                    <action selector="dispatchDelay:" destination="EBZ-vx-oyJ" eventType="touchUpInside" id="KIc-gM-o90"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltd-v5-iHP">
+                                <rect key="frame" x="21" y="353" width="267" height="30"/>
+                                <state key="normal" title="前面任务完成再执行后面任务" backgroundImage="Image"/>
+                                <connections>
+                                    <action selector="wait:" destination="EBZ-vx-oyJ" eventType="touchUpInside" id="nQn-x3-g3F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGj-mY-WKC">
+                                <rect key="frame" x="22" y="400" width="266" height="30"/>
+                                <state key="normal" title="死锁主线程" backgroundImage="Image"/>
+                                <connections>
+                                    <action selector="deadlock1:" destination="EBZ-vx-oyJ" eventType="touchUpInside" id="esW-tz-AXa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEm-LH-MdD">
+                                <rect key="frame" x="22" y="449" width="266" height="30"/>
+                                <state key="normal" title="死锁子线程" backgroundImage="Image"/>
+                                <connections>
+                                    <action selector="deadlock2:" destination="EBZ-vx-oyJ" eventType="touchUpInside" id="Ii0-5c-qRs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="GCD" id="W9U-ks-Z7W"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Up8-EU-rdH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-228" y="1013"/>
+        </scene>
+        <!--NSOperation-->
+        <scene sceneID="0cx-6J-iZh">
+            <objects>
+                <viewController id="QBs-dq-gXC" customClass="NSOperationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v31-aW-yXq"/>
+                        <viewControllerLayoutGuide type="bottom" id="eZa-er-aq8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FXj-W3-522">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TvU-Lo-3RH">
+                                <rect key="frame" x="20" y="80" width="237" height="30"/>
+                                <state key="normal" title="NSInvocationOperation" backgroundImage="Image"/>
+                                <connections>
+                                    <action selector="NSInvocationOperationClick:" destination="QBs-dq-gXC" eventType="touchUpInside" id="Ctm-RD-dAh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j9Q-Tx-O4s">
+                                <rect key="frame" x="20" y="135" width="237" height="30"/>
+                                <state key="normal" title="NSBlockOperation" backgroundImage="Image"/>
+                                <connections>
+                                    <action selector="NSBlockOperationClick:" destination="QBs-dq-gXC" eventType="touchUpInside" id="DGQ-yL-EFa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="08O-j9-CeW">
+                                <rect key="frame" x="20" y="238" width="237" height="30"/>
+                                <state key="normal" title="其他队列" backgroundImage="Image"/>
+                                <connections>
+                                    <action selector="otherQueue:" destination="QBs-dq-gXC" eventType="touchUpInside" id="5ps-AQ-O4m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0VT-Yo-8TE">
+                                <rect key="frame" x="20" y="188" width="237" height="30"/>
+                                <state key="normal" title="主队列" backgroundImage="Image"/>
+                                <connections>
+                                    <action selector="mainQueue:" destination="QBs-dq-gXC" eventType="touchUpInside" id="OgU-8j-Ny0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNT-JD-iOu">
+                                <rect key="frame" x="20" y="292" width="237" height="30"/>
+                                <state key="normal" title="向队列添加任务" backgroundImage="Image"/>
+                                <connections>
+                                    <action selector="addTaskToQueue:" destination="QBs-dq-gXC" eventType="touchUpInside" id="IW9-Yy-g5x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGE-5i-dju">
+                                <rect key="frame" x="20" y="343" width="237" height="30"/>
+                                <state key="normal" title="任务依赖" backgroundImage="Image"/>
+                                <connections>
+                                    <action selector="addDependency:" destination="QBs-dq-gXC" eventType="touchUpInside" id="5ag-Gc-KR8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="NSOperation" id="7Sm-yg-IH0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tKA-FB-sbF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181" y="1013"/>
+        </scene>
+        <!--NSNSThread-->
+        <scene sceneID="ZBK-Cd-SXm">
+            <objects>
+                <viewController id="Mhh-2f-xZO" customClass="NSThreadViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uTE-YZ-b6w"/>
+                        <viewControllerLayoutGuide type="bottom" id="HA6-Gk-bSL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sHz-NS-y5G">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CnQ-Ls-ROH">
+                                <rect key="frame" x="31" y="80" width="153" height="30"/>
+                                <state key="normal" title="开始" backgroundImage="Image"/>
+                                <connections>
+                                    <action selector="start:" destination="Mhh-2f-xZO" eventType="touchUpInside" id="zVj-Cd-bSo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfD-yZ-o4L">
+                                <rect key="frame" x="31" y="269" width="153" height="30"/>
+                                <state key="normal" title="延时3秒" backgroundImage="Image"/>
+                                <connections>
+                                    <action selector="delay:" destination="Mhh-2f-xZO" eventType="touchUpInside" id="tIp-30-w5k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2g-zk-C2n">
+                                <rect key="frame" x="31" y="126" width="153" height="30"/>
+                                <state key="normal" title="取消" backgroundImage="Image"/>
+                                <connections>
+                                    <action selector="cancel:" destination="Mhh-2f-xZO" eventType="touchUpInside" id="mdd-uD-vG4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ud4-7w-mFq">
+                                <rect key="frame" x="31" y="220" width="153" height="30"/>
+                                <state key="normal" title="线程通信" backgroundImage="Image"/>
+                                <connections>
+                                    <action selector="communication:" destination="Mhh-2f-xZO" eventType="touchUpInside" id="JJj-jn-NGt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ErE-xv-AiL">
+                                <rect key="frame" x="31" y="171" width="153" height="30"/>
+                                <state key="normal" title="当前线程做某事" backgroundImage="Image"/>
+                                <connections>
+                                    <action selector="doSomething:" destination="Mhh-2f-xZO" eventType="touchUpInside" id="OB5-6b-ub8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m6L-bf-J3S">
+                                <rect key="frame" x="31" y="318" width="153" height="30"/>
+                                <state key="normal" title="线程同步(抢票)" backgroundImage="Image"/>
+                                <connections>
+                                    <action selector="twoPeopleBuy:" destination="Mhh-2f-xZO" eventType="touchUpInside" id="sW8-YA-yfH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="NSNSThread" id="9A0-Kt-t4N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ERC-0B-SeK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="1013"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mC4-Dt-cGd">
+            <objects>
+                <navigationController id="Zsz-kK-81N" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="adH-X8-Vy8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="qUt-Qu-SxD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hqh-4N-Af9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-228" y="264"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="604" height="77"/>
+    </resources>
 </document>
